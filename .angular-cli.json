@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "start-angular-webpack-hotloader"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "tsconfig": "tsconfig.app.json",
+      "prefix": "app"
+    }
+  ],
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    }
+  ],
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

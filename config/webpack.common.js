@@ -5,9 +5,9 @@ var helpers = require('./helpers');
 
 module.exports = {
   entry: {
-    polyfills: helpers.root('config', 'polyfills.ts'),
+    polyfills: helpers.root('src', 'polyfills.ts'),
     vendor: helpers.root('config', 'vendor.ts'),
-    app: helpers.root('index.ts')
+    app: helpers.root('src', 'main.ts')
   },
 
   resolve: {
@@ -21,7 +21,7 @@ module.exports = {
         loaders: [
           {
             loader: 'awesome-typescript-loader?inlineSourceMap=true&sourceMap=false',
-            options: { configFileName: helpers.root('config', 'tsconfig.app.json') }
+            options: { configFileName: helpers.root('src', 'tsconfig.app.json') }
           } , 'angular2-template-loader','@angularclass/hmr-loader'
         ]
       },
@@ -35,13 +35,13 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: helpers.root('src', 'components'),
+        exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
       },
       
       {
         test: /\.css$/,
-        include: helpers.root('src', 'components'),
+        include: helpers.root('src', 'app'),
         loader: 'raw-loader'
       }
     ]
@@ -61,7 +61,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: 'public/index.html'
+      template: 'src/index.html'
     })
   ]
 };
