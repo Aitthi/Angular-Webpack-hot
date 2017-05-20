@@ -10,8 +10,11 @@ npm install
 // Dev
 npm start
 
-// Prod
+// Prod angularCLI
 ng build --prod --aot
+
+// Prod webpack
+npm run build
 ```
 ### Build wiki
 [Build](https://github.com/angular/angular-cli/wiki/build)
