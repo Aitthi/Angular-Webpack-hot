@@ -7,13 +7,16 @@ git clone https://aitthi@bitbucket.org/aitthi/angular-webpack-hot.git
 cd Angular-Webpack-hot
 npm install
 
-// Dev
+// Run Dev on Webpack HotLoader on
 npm start
 
-// Prod angularCLI
+// Run Dev on angularCLI HotLoader off
+ng serve
+
+// build Prod on angularCLI
 ng build --prod --aot
 
-// Prod webpack
+// build Prod on webpack
 npm run build
 ```
 ### Build wiki
