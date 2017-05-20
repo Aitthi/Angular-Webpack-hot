@@ -12,9 +12,9 @@ npm start
 
 // Prod
 ng build --prod --aot
-// build
-[https://github.com/angular/angular-cli/wiki/build](https://github.com/angular/angular-cli/wiki/build)
 ```
+### Build wiki
+[Build](https://github.com/angular/angular-cli/wiki/build)
 
 ### Generating Components, Directives, Pipes and Services
 
