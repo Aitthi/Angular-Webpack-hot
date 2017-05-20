@@ -3,7 +3,7 @@
 Code from DIW[BN]
 
 ```
-git clone https://github.com/Aitthi/Angular-Webpack-hot.git
+git clone https://aitthi@bitbucket.org/aitthi/angular-webpack-hot.git
 cd Angular-Webpack-hot
 npm install
 
