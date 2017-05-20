@@ -11,7 +11,7 @@ npm install
 npm start
 
 // Prod
-npm build
+npm run build
 ```
 
 ### Generating Components, Directives, Pipes and Services
