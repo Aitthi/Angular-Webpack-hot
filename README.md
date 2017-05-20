@@ -11,7 +11,9 @@ npm install
 npm start
 
 // Prod
-npm run build
+ng build --prod --aot
+// build
+[https://github.com/angular/angular-cli/wiki/build](https://github.com/angular/angular-cli/wiki/build)
 ```
 
 ### Generating Components, Directives, Pipes and Services
